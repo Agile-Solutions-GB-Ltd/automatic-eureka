@@ -1,2 +1,3 @@
 # automatic-eureka
-Example projects and templates
+
+Example projects and templates.
