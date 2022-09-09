@@ -10,35 +10,36 @@ libraries your project depends on, it will manage (install/update) them for you.
 [installing-with-the-official-installer](https://python-poetry.org/docs/master/#installing-with-the-official-installer).
 
 ```sh
-poetry self update --preview
-```
-
-```sh
-poetry plugin add poetry-bumpversion
+poetry self add poetry-bumpversion
 ```
 
 ```sh
 poetry -V
-Poetry (version 1.2.0b2)
+Poetry (version 1.2.0)
 ```
 
 ## Features
 
 1. Poetry packaged python project with example CLI entry point.
 2. Linux and Windows compatible project.
-3. Example Unit Tests.
-4. Example flake8 linter configuration.
-5. Example line operation via click API allowing project to be ran from command line of from CICD pipelines.
-6. Example use of Fabric API to execute external commands.
-7. Example use of Texttable for pretty table output.
-8. Example Jenkins pipeline.
-9. Example GitHub actions.
-10. Python package publishing to PiPy.
-11. Docker image publishing to docker hub.
-12. Example usage of python package.
-13. Example usage of docker image.
+3. Example read/write YML files.
+4. Example Unit Tests.
+5. Example flake8 linter configuration.
+6. Example line operation via click API allowing project to be ran from command line of from CICD pipelines.
+7. Example use of Fabric API to execute external commands.
+8. Example use of Texttable for pretty table output.
+9. Example Jenkins pipeline.
+10. Example GitHub actions. 
+11. 11Python package publishing to PiPy. 
+12. Docker image publishing to docker hub. 
+13. Example usage of python package. 
+14. Example usage of docker image.
 
 ## Getting Started
+
+```sh
+poetry update
+```
 
 ```sh
 poetry install
