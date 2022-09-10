@@ -1,0 +1,8 @@
+-
+  name: "Sample 1"
+  description: "This is sample 1 message"
+  message: "Hello world from 1"
+-
+  name: "Sample 2"
+  description: "This is sample 2 message"
+  message: "Hello world from 2"

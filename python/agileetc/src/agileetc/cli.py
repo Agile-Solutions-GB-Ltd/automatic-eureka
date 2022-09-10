@@ -1,6 +1,8 @@
 import click
 import pkg_resources
 
+from src.agileetc.sample import read, pretty
+
 CONTEXT_SETTINGS = dict(help_option_names=['-h', '--help'])
 
 
@@ -13,6 +15,14 @@ def cli() -> int:
 def version() -> None:
     """Display the current version."""
     click.echo(pkg_resources.istribution('agileetc').version)
+
+
+@cli.command()
+@click.argument('data_path', type=click.Path(exists=True))
+def print_sample(data_path) -> None:
+    """Print sample data using poetry run agileetc print-sample ."""
+    data = read(data_path)
+    pretty(data)
 
 
 if __name__ == '__main__':

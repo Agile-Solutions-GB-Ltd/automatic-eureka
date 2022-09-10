@@ -95,6 +95,27 @@ And also for poetry projects via:
 poetry add aigleetc
 ```
 
+## Continuous Integration
+
+The objects of each of the example CI pipelines here are to:
+
+* Lint the python code.
+* Run Unit Tests
+* Build package.
+* Release package, bumping the version.
+* Publishing in new package version.
+
+### GitHub Actions
+
+The example GitHub actions CI for this project is located in file .github/workflows/python-ci.yml and is available from 
+the GitHub dashboard. This CI is setup to [run via a local runner](https://github.com/Agile-Solutions-GB-Ltd/automatic-eureka/settings/actions/runners) which should be configured.
+
+### Jenkins
+
+
+### GoCD
+
+
 ## Contributing
 
 Please read [CONTRIBUTING.md](CONTRIBUTING.md) for details on our code of conduct, and the process for submitting pull requests to us.
