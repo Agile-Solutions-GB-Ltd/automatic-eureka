@@ -1,11 +1,11 @@
 [tool.poetry]
 name = "agileetc"
-version = "0.0.5"
+version = "0.0.6"
 license = "Apache-2.0"
 readme = "README.md"
 description = "Future Agile CICD tooling template"
 authors = ["agileturret <Paul.Gilligan@agilesolutions.co.uk>"]
-homepage = "https://github.com/Agile-Solutions-GB-Ltd/automatic-eureka/tree/main/python"
+homepage = "https://github.com/Agile-Solutions-GB-Ltd/automatic-eureka/tree/main/python/agileetc"
 repository = "https://github.com/Agile-Solutions-GB-Ltd/automatic-eureka"
 
 [tool.poetry.scripts]
