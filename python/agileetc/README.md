@@ -2,21 +2,21 @@
 
 Example python 3.9+ project where we can develop best practices and provide teams with a useful template with the following features:
 
-1. Poetry packaged python project with example CLI entry point.
-2. Linux and Windows compatible project.
-3. Example read/write YML files.
-4. Example Unit Tests.
-5. Example flake8 linter configuration.
-6. Example line operation via click API allowing project to be ran from command line of from CICD pipelines.
-7. Example use of Fabric API to execute external commands.
-8. Example use of Texttable for pretty table output.
-9. Example Jenkins pipeline.
-10. Example GoCD pipeline. 
-11. Example GitHub actions. 
-12. Python package publishing to PiPy. 
-13. Docker image publishing to docker hub. 
-14. Example usage of python package. 
-15. Example usage of docker image.
+* Poetry packaged python project with example CLI entry point.
+* Linux and Windows compatible project.
+* Example read/write YML files.
+* Example Unit Tests.
+* Example flake8 linter configuration.
+* Example line operation via click API allowing project to be ran from command line of from CICD pipelines.
+* Example use of Fabric API to execute external commands.
+* Example use of Texttable for pretty table output.
+* Example Jenkins pipeline.
+* Example GoCD pipeline. 
+* Example GitHub actions. 
+* Python package publishing to PiPy. 
+* Docker image publishing to docker hub. 
+* Example usage of python package. 
+* Example usage of docker image.
 
 ## Prerequisites
 
