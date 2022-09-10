@@ -70,8 +70,13 @@ export PYPI_USERNAME=__token__
 export PYPI_PASSWORD=<Your API Token>
 poetry publish --build --username $PYPI_USERNAME --password $PYPI_PASSWORD
 ```
+The build option will automatically build the release artifacts for you as shown below.
 
 ![](../../docs/images/Screenshot at 2022-09-10 10-41-06.png)
+
+You can then verify that your newly released package has been published.
+
+![](../../docs/images/Screenshot at 2022-09-10 11-16-41.png)
 
 ## Versioning
 We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/Agile-Solutions-GB-Ltd/agileup/tags). 
@@ -82,6 +87,20 @@ We are using [poetry-bumpversion](https://github.com/monim67/poetry-bumpversion)
 
 ```sh
 poetry version patch
+```
+
+## Dependency
+
+Once the release has been created it is now available for you to use in other python projects via:
+
+```sh
+pip install agileetc
+```
+
+And also for poetry projects via:
+
+```sh
+poetry add aigleetc
 ```
 
 ## Contributing
