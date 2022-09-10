@@ -60,8 +60,20 @@ poetry run flake8
 poetry run pytest
 ```
 
-## Versioning
+## Publish
 
+* By default we are using [PYPI packages](https://packaging.python.org/en/latest/tutorials/installing-packages/). 
+* Create yourself an access token for PYPI and then follow the instructions.
+
+```sh
+export PYPI_USERNAME=__token__ 
+export PYPI_PASSWORD=<Your API Token>
+poetry publish --build --username $PYPI_USERNAME --password $PYPI_PASSWORD
+```
+
+![](../../docs/images/Screenshot at 2022-09-10 10-41-06.png)
+
+## Versioning
 We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/Agile-Solutions-GB-Ltd/agileup/tags). 
 
 ## Releasing

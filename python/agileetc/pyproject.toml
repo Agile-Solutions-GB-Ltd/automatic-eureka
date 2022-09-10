@@ -1,7 +1,7 @@
 [tool.poetry]
 name = "agileetc"
-version = "0.0.1"
-description = "Future Agile CICD tooling"
+version = "0.0.3"
+description = "Future Agile CICD tooling template"
 authors = ["agileturret <Paul.Gilligan@agilesolutions.co.uk>"]
 
 [tool.poetry.scripts]
@@ -21,4 +21,4 @@ bumpversion = "^0.6"
 requires = ["poetry-core>=1.0.0"]
 build-backend = "poetry.core.masonry.api"
 
-[tool.poetry_bumpversion.file."agileetc/__init__.py"]
+[tool.poetry_bumpversion.file."src/agileetc/__init__.py"]
