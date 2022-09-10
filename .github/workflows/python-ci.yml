@@ -73,7 +73,7 @@ jobs:
           path: ~/.cache/pypoetry/virtualenvs
           key: ${{ runner.os }}-poetry-${{ hashFiles('poetry.lock') }}
       - run: | 
-          poetry update
+          poetry env use python3      
           poetry version patch
       - name: Commit files
         run: |
