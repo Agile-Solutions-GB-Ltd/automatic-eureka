@@ -1,5 +1,6 @@
 # agileetc
 
+
 Example python 3.9+ project where we can develop best practices and provide teams with a useful template with the following features:
 
 * Poetry packaged python project with example CLI entry point.
