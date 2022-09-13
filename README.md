@@ -99,3 +99,15 @@ be https://pypi.org/project/agileetc/ for python and https://hub.docker.com/repo
 2. https://www.sonatype.com/products/nexus-repository
 3. And solutions from your cloud vendor
 
+## What is a typical CI testing?
+
+Testing is used to verify the correct operation of software before it is released, testing can also be applied 
+to a number of different operating systems, for example using GitHub actions we can define the following CI pipeline.
+
+![](docs/images/Screenshot at 2022-09-13 14-44-38.png)
+
+![](docs/images/Screenshot at 2022-09-13 14-46-52.png)
+
+Here the "lint" step is used for code QA and the "Matrix: ci" step performs build and test once this is successful on the
+target OS images then the release step is ran and the package is published.
+
