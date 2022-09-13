@@ -41,5 +41,10 @@ contents of the package also depends on the package type being used which is oft
 4. An entry point or points for the application or script being used.
 
 
+| Language | Package Type | Repository Type | Entry Point           |
+|----------|--------------|----------------|-----------------------|
+| Python   | Poetry       | PyPi           | [tool.poetry.scripts] |
+
+
 
 
