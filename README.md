@@ -11,8 +11,8 @@ under continuous delivery (CD).
 it allows us to both control the release of these utilities as well as providing a PLAN B in that we can always perform 
 pipeline operations outside of using our favorite CICD platofrm.
 
-To clarify the second point if we define a pipeline tasks as below using our python utility package we can execute the command
-*mypythonutility -E DEV --list* making both the pipeline code more readable and also allowing us to future develop the python 
+To clarify the second point if we define a pipeline task as below using our python utility package we can execute the command
+`mypythonutility -E DEV --list` making both the pipeline code more readable and also allowing us to further develop the python 
 package without making significant changes the pipeline code itself.
 
 ```shell
