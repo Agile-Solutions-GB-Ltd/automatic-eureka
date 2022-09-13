@@ -1,6 +1,5 @@
 # agileetc
 
-
 Example python 3.9+ project where we can develop best practices and provide teams with a useful template with the following features:
 
 * Poetry packaged python project with example CLI entry point.
@@ -8,10 +7,9 @@ Example python 3.9+ project where we can develop best practices and provide team
 * Example read/write YML files.
 * Example Unit Tests.
 * Example flake8 linter configuration.
-* Example line operation via click API allowing project to be ran from command line of from CICD pipelines.
+* Example line operation via click API allowing project to be run from command line of from CICD pipelines.
 * Example use of Fabric API to execute external commands.
 * Example use of Texttable for pretty table output.
-* Example Jenkins pipeline.
 * Example GoCD pipeline. 
 * Example GitHub actions. 
 * Python package publishing to PiPy. 
