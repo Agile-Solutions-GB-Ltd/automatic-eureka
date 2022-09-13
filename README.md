@@ -40,11 +40,28 @@ contents of the package also depends on the package type being used which is oft
 3. Some meta-data on the source code repository, author and other useful information.
 4. An entry point or points for the application or script being used.
 
+Some examples of the relationships between packages, repositories and application entry points:
 
-| Language | Package Type | Repository Type | Entry Point           |
-|----------|--------------|----------------|-----------------------|
-| Python   | Poetry       | PyPi           | [tool.poetry.scripts] |
+| Language | Package Type | Repository Type | Entry Point                               |
+|----------|--------------|-----------------|-------------------------------------------|
+| Python   | Poetry       | PyPi            | [tool.poetry.scripts]                     |
+| Java     | Maven        | Maven           | public static void main(String args[])    |
+| C#       | NuGet        | NuGet           | static void Main(string[] args)           |
+| ANY      | OCI          | Docker          | ENTRYPOINT ["SOME_COMMAND","ARG1","ARG2"] |
 
+## What is a typical CI process?
 
+From a software package point of view, the objective of continuous integration to build, test/QA and release a software 
+project with a unique version number and save that package in a repository.
 
+**For Quality Assurance (QA)** you might consider adding https://codeql.github.com/ or https://www.sonarqube.org/features/quality-gate/ 
+quality gates to your pipelines.  
+
+**A Repository** can be public, an example of a public repository containing a released package might 
+be https://pypi.org/project/agileetc/ for python and https://hub.docker.com/repository/docker/agileturret/gocd-agent-ubuntu-20.04 for docker.
+
+**A Repository** can be private an example of a private repository containing a released package might be:
+1. https://jfrog.com/artifactory/
+2. https://www.sonatype.com/products/nexus-repository
+3. And solutions from your cloud vendor
 
