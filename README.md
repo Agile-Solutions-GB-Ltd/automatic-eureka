@@ -49,6 +49,40 @@ Some examples of the relationships between packages, repositories and applicatio
 | C#       | NuGet        | NuGet           | static void Main(string[] args)           |
 | ANY      | OCI          | Docker          | ENTRYPOINT ["SOME_COMMAND","ARG1","ARG2"] |
 
+Meta-data used within a package specification normally also refers to dependencies that must be included for the 
+application to work. For poetry python packages this is defined in the **pyproject.toml** file for example:
+
+```ini
+[tool.poetry.dependencies]
+python = "^3.9"
+click = "^8.1"
+PyYAML = "^5.4.1"
+pytest = "^7.1.3"
+prettytable = "^3.3.0"
+Fabric3 = "^1.14.post1"
+```
+
+In a maven project inside the pom.xml for example:
+
+```xml
+	<dependencies>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-actuator</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.projectlombok</groupId>
+			<artifactId>lombok</artifactId>
+			<optional>true</optional>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-test</artifactId>
+			<scope>test</scope>
+		</dependency>
+	</dependencies>
+```
+
 ## What is a typical CI process?
 
 From a software package point of view, the objective of continuous integration to build, test/QA and release a software 
