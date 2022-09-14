@@ -14,7 +14,7 @@ def cli() -> int:
 @cli.command()
 def version() -> None:
     """Display the current version."""
-    click.echo(pkg_resources.istribution('agileetc').version)
+    click.echo(pkg_resources.get_distribution("agileetc").version)
 
 
 @cli.command()
