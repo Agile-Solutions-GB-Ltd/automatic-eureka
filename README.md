@@ -45,7 +45,7 @@ Some examples of the relationships between packages, repositories and applicatio
 | Language | Package Type | Repository Type | Entry Point                               |
 |----------|--------------|-----------------|-------------------------------------------|
 | Python   | Poetry       | PyPi            | [tool.poetry.scripts]                     |
-| Java     | Maven        | Maven           | public static void main(String args[])    |
+| Java     | Maven/Jar    | Maven           | public static void main(String args[])    |
 | C#       | NuGet        | NuGet           | static void Main(string[] args)           |
 | ANY      | OCI          | Docker          | ENTRYPOINT ["SOME_COMMAND","ARG1","ARG2"] |
 
