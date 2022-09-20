@@ -13,9 +13,9 @@ If we have released an application that runs as a services, has an endpoint on t
 probably want to use continuous delivery (CD) to run that application in some environment.
 
 #### Continuous Integration (CI) for Utilities
-We might want to use software packages for our pipelines as utilities, why? If we can develop and release our pipeline 
-code utilities it allows us to control the use of these utilities, via the version, and also simplify and make our 
-pipeline code more readable, for example `agileup` might be a useful python package that we have written.
+We might want to use software packages for our pipelines as utilities, why? If we can develop and follow **B.C.T.R.P.S**
+with pipeline code utilities also it allows us to control the use of these utilities via the version. Also we can simplify 
+and make our pipeline code more readable, for example `agileup` might be a useful python package that we have written.
 
 ```shell
 tasks:
@@ -31,7 +31,6 @@ tasks:
 ```    
 
 ## Build
-
 
 
 ## Configure
