@@ -32,6 +32,8 @@ tasks:
 
 ## Build
 
+The build process for any project very much depends on the langauge used and the decisions made by development teams. From
+and DevOps point of view though all we need to understand are the steps needed to build the software into some chosen package.
 
 ## Configure
 
@@ -54,6 +56,11 @@ quality gates to your pipelines.
 
 ## Release
 
+Most release processes only run and create a package when Test/QA has ran to success and often follow these steps:
+
+1. Update source code to next version often a good choice is to use [semver](https://semver.org/).
+2. Commit and tag the changes.
+3. Push changes and tags to git.
 
 ## Package
 
