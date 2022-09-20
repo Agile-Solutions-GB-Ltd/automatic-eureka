@@ -120,11 +120,10 @@ All we need for this is to install [pack](https://buildpacks.io/docs/tools/pack/
 
 ### CICD Source to Image
 
-| Language | Instructions                                                  |
-|----------|---------------------------------------------------------------|
-| Python   |                                                               |
-| Python   |                                                               |
-| Java     | [sample-application-1](java/sample-application-1/README.md)   |
+| Language | Instructions                                                                           |
+|----------|----------------------------------------------------------------------------------------|
+| Python   | [poetry-run](https://github.com/paketo-buildpacks/samples/tree/main/python/poetry-run) |
+| Java     | [sample-application-1](java/sample-application-1/README.md)                            |
 
 ### GoCD Server Example Docker Image
 
