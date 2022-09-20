@@ -5,7 +5,7 @@ Tested, Released, Packaged and Stored (B.C.T.R.P.S). Examples of which are cover
 use cases in mind: 
 
 #### Continuous Integration (CI)
-We use continuous integration (CI) to fetch source code from a git repository and then execute B.C.T.R.P.S where the 
+We use continuous integration (CI) to fetch source code from a git repository and then execute **B.C.T.R.P.S** where the 
 release version is normally generated.
 
 #### Continuous Delivery (CD)
