@@ -30,16 +30,21 @@ tasks:
     run_if: passed
 ```    
 
-## Build
+## Source To Binary To Image Method
+
+The **B.C.T.R.P.S** steps here might be considered to be the more traditional way of providing applications to users that
+with the correct automation can be used for DevOps.
+
+### Build
 
 The build process for any project very much depends on the langauge used and the decisions made by development teams. From
 and DevOps point of view though all we need to understand are the steps needed to build the software into some chosen package.
 
-## Configure
+### Configure
 
 The [12 Factor](https://12factor.net/) approach to configuration should always be followed. 
 
-## Test/QA
+### Test/QA
 
 **Testing** is used to verify the correct operation of software before it is released, testing can also be applied 
 to a number of different operating systems, for example using GitHub actions we can define the following CI pipeline.
@@ -52,9 +57,9 @@ Here the "lint" step is used for code QA and the "Matrix: ci" step performs buil
 target OS images then the release step is ran and the package is published.
 
 **For Quality Assurance (QA)** you might consider adding https://codeql.github.com/ or https://www.sonarqube.org/features/quality-gate/ 
-quality gates to your pipelines.  
+quality gates to your pipelines.  ###
 
-## Release
+### Release
 
 Most release processes only run and create a package when Test/QA has ran to success and often follow these steps:
 
@@ -62,7 +67,7 @@ Most release processes only run and create a package when Test/QA has ran to suc
 2. Commit and tag the changes.
 3. Push changes and tags to git.
 
-## Package
+### Package
 
 Some examples of the relationships between packages, repositories and application entry points:
 
@@ -86,7 +91,7 @@ prettytable = "^3.3.0"
 Fabric3 = "^1.14.post1"
 ```
 
-## Store
+### Store
 
 From a software package point of view, the objective of continuous integration to build, test/QA and release a software 
 project with a unique version number and save that package in a repository.
@@ -98,3 +103,45 @@ be https://pypi.org/project/agileetc/ for python and https://hub.docker.com/repo
 1. https://jfrog.com/artifactory/
 2. https://www.sonatype.com/products/nexus-repository
 3. And solutions from your cloud vendor
+
+## Source To Image Method
+
+The **B.C.T.R.P.S** steps here might allows you to move from source code to image and running application in very few steps.
+
+This is more developer than operations focused as developers are not really interested in learning operations. The examples
+here are also very similar to current `serverless technologies` offered in the cloud.
+
+All we need for this is to install [pack](https://buildpacks.io/docs/tools/pack/) which is part of the 
+[buildpacks](https://buildpacks.io/) initiative supported by Heroku & CloudFoundry.
+
+> Cloud Native Buildpacks transform your application source code into images that can run on any cloud.
+
+> Pack runs against a docker host.
+
+### CICD Source to Image
+
+| Sample | Language | Instructions |
+|--------|----------|--------------|
+|        | Python   |              |
+|        | Python   |              |
+|        | Java     |              |
+
+### GoCD Server Example Docker Image
+
+As an example we can use a simple [Docker In Docker](https://devopscube.com/run-docker-in-docker/) approach 
+to run our pack commands against a docker host and build our application images. 
+
+```shell
+FROM gocd/gocd-agent-docker-dind:v22.2.0
+LABEL maintainer="Paul.Gilligan@agilesolutions.co.uk"
+
+ENV TZ=Etc/UTC
+ENV DEBIAN_FRONTEND=noninteractive
+ENV GOCD_USER go
+
+USER root
+
+RUN (curl -sSL "https://github.com/buildpacks/pack/releases/download/v0.27.0/pack-v0.27.0-linux.tgz" | sudo tar -C /usr/local/bin/ --no-same-owner -xzv pack)
+
+USER ${GOCD_USER}
+```
