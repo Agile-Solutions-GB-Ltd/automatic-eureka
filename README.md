@@ -120,11 +120,11 @@ All we need for this is to install [pack](https://buildpacks.io/docs/tools/pack/
 
 ### CICD Source to Image
 
-| Sample | Language | Instructions |
-|--------|----------|--------------|
-|        | Python   |              |
-|        | Python   |              |
-|        | Java     |              |
+| Language | Instructions                                                  |
+|----------|---------------------------------------------------------------|
+| Python   |                                                               |
+| Python   |                                                               |
+| Java     | [sample-application-1](java/sample-application-1/README.md)   |
 
 ### GoCD Server Example Docker Image
 
