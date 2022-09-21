@@ -1,5 +1,7 @@
 # automatic-eureka
 
+![](docs/images/cicd-helper.png)
+
 Before starting to develop CICD pipelines it is worth understanding how code and applications are Built, Configured, 
 Tested, Released, Packaged and Stored (B.C.T.R.P.S). Examples of which are covered in this project with the following 
 use cases in mind: 
